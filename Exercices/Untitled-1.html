@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        margin: 0px;
+
+    }
+
+    .header {
+        height: 750px;
+        color: white;
+        background: blue url("imagesfigma/Mask.png") no-repeat;
+    }
+
+    .menu {
+        border-bottom: 1px solid gray;
+        padding: 20px 180px;
+        display: flex;
+    }
+
+    .menu .logo {
+        margin: 10px 0px;
+        background: url("imagesfigma/code-lab.png") no-repeat;
+        padding: 10px 45px;
+
+    }
+
+    .menu .links {
+        margin: 10px 200px;
+        grid-column-gap: 40px;
+        display: flex;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        color: grey;
+    }
+
+    .menu .button {
+        padding: 10px 25px;
+        margin: 0px 30px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .content {
+        padding: 100px 180px;
+        color: white;
+    }
+
+    .content .text h5 {
+        font-family: Arial Hebrew;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.192px;
+
+        color: #FFCF26;
+
+        width: 789px;
+        left: 360px;
+
+    }
+
+    .content .text h1 {
+        font-family: Arial Hebrew;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 68px;
+        letter-spacing: 0.768px;
+
+        color: #FFFFFF;
+
+        width: 789px;
+        height: 154px;
+        left: 360px;
+        top: 383px;
+    }
+
+    .content .button {
+        display: flex;
+    }
+
+    .content .button a {
+        color: black;
+        background: #FFCF26;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 15px 20px;
+        margin: 10px 20px;
+    }
+
+    .content a:hover {
+        color: rgba(54, 54, 54, 0.884);
+
+    }
+
+    .content .button p {
+        font-family: Arial Hebrew;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+
+        left: 32.62%;
+        right: 36.07%;
+        top: 38.85%;
+        bottom: 53.32%;
+    }
+
+    .content .box1 {
+        position: absolute;
+        left: 900px;
+        right: 100px;
+        top: 300px;
+        bottom: 40px;
+
+        background: #FFFFFF;
+        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        color: black;
+        margin: 10px 30px;
+        padding: 70px 40px;
+
+        height: 5px;
+        width: 80px;
+
+
+        color: #FFFFFF;
+
+    }
+
+    .content .box1 p {
+        font-size: 15px;
+        line-height: 15px;
+        text-align: center;
+        color: grey;
+        padding: 10px 1px;
+
+        margin: 5px 10px;
+        display: flex;
+        width: 100px;
+
+    }
+
+    .content .box1 #number {
+        color: black;
+        position: absolute;
+        font-weight: bold;
+        font-size: 20px;
+
+        top: 25px;
+        left: 45px;
+        bottom: 100px;
+        background: url("imagesfigma/Shape1.png")no-repeat;
+        background-size: 35%;
+        padding: 10px 30px;
+        margin: 10px 1px;
+        width: 20px;
+        height: 10px;
+    }
+
+    .content .box2 {
+        position: absolute;
+        left: 1100px;
+        right: 20px;
+        top: 185px;
+        bottom: 40px;
+        height: 5px;
+        width: 70px;
+        background: #FFFFFF;
+        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+
+        margin: 20px 30px;
+        padding: 70px 40px;
+        ;
+        margin-left: 30px;
+
+    }
+
+    .content .box2 p {
+        font-size: 15px;
+        line-height: 15px;
+        text-align: center;
+        color: grey;
+        padding: 5px 5px;
+    }
+
+    .content .box2 #shape {
+        position: absolute;
+        background: url("imagesfigma/Shape2.png")no-repeat;
+        background-size: 35%;
+        padding: 10px 30px;
+        margin: 10px 1px;
+        width: 20px;
+        height: 10px;
+        bottom: 60px;
+
+    }
+
+    .logos {
+        position: absolute;
+        background: #FFFFFF;
+        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        left: 280px;
+
+        top: 700px;
+
+
+        height: 50px;
+        width: 900px;
+        margin: 10px 10px;
+        padding: 50px 20px;
+        padding-left: 70px;
+        z-index: 2;
+    }
+
+    .content2 {
+        position: relative;
+        width: 1518px;
+        height: 3000px;
+
+        background: #F5F7FA;
+    }
+
+    .content2 .image {
+        position: absolute;
+        top: 40px;
+
+
+    }
+
+    .content2 .text {
+        position: absolute;
+        font-family: Arial Hebrew;
+        font-style: normal;
+        font-weight: normal;
+        color: #020113;
+        right: 0.50%;
+        top: 9%;
+        font-size: 42px;
+        line-height: 45px;
+        letter-spacing: 0.504px;
+        width: 483px;
+        height: 154px;
+
+    }
+
+    .content2 .texts {
+        position: absolute;
+        font-family: Arial Hebrew;
+        font-style: normal;
+        font-weight: normal;
+        color: #020113;
+        right: 9%;
+        top: 16%;
+        width: 301px;
+        height: 56px;
+
+    }
+
+    .content2 .paths {
+        position: absolute;
+        left: 69%;
+        top: 502px;
+        width: 10px;
+        height: 56px;
+        display: grid;
+        grid-row-gap: 20px;
+
+    }
+
+    .content2 .button {
+        position: absolute;
+        color: black;
+        background: #FFCF26;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 15px 20px;
+        margin: 10px 20px;
+        top: 21.80%;
+        left: 68%;
+        font-family: Arial Hebrew;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        mix-blend-mode: normal;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.216px;
+
+
+    }
+
+    .content2 a:hover {
+        color: rgba(54, 54, 54, 0.884);
+
+    }
+
+    .content2 .text2 {
+        position: absolute;
+        width: 826px;
+        height: 56px;
+        left: 360px;
+        top: 1000px;
+
+        font-family: Arial Hebrew;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 42px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.504px;
+
+        color: #020113;
+    }
+</style>
+
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="#"> DisignJuice</a>
+            </div>
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Portofolio</a>
+                <a href="#">Blog</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="button">
+                <a href="#">Get Free Call</a>
+            </div>
+
+
+        </div>
+        <div class="content">
+            <div class="text">
+                <h5>#1 AGENCY FOR DESIGNING AWESOME WEBSITES ON PLANET EARTH</h5>
+                <h1>We Design Complete for Online SaaS Business.</h1>
+            </div>
+            <div class="button">
+                <a href="#">Get a Free Design Consultation</a>
+                <p>Get a Creative, Modern and Custom-Made Design for Your Business Today!</p>
+            </div>
+
+            <div class="box1">
+                <p>Revenue Stream Increase</p>
+                <p id="number">237%</p>
+
+            </div>
+            <div class="box2">
+                <p>More Conversions </p>
+                <p id="shape"></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="logos">
+        <img src="imagesfigma/code-lab logo.png">
+        <img src="imagesfigma/earth-2.png">
+        <img src="imagesfigma/treva.png">
+        <img src="imagesfigma/ideaa.png">
+        <img src="imagesfigma/hexa.png">
+    </div>
+    <div class="content2">
+        <div class="image">
+            <img src="imagesfigma/Rectangle.png">
+        </div>
+        <div class="text">
+            <p>SaaS Business Websites That Simply Work</p>
+        </div>
+        <div class="texts">
+            <p>Fast, hassle-free process</p>
+            <p>Website you can update easily</p>
+            <p>Talented designers</p>
+            <p>Custom designs for your brand</p>
+        </div>
+        <div class="paths">
+            <img src="imagesfigma/Path.png">
+            <img src="imagesfigma/Path.png">
+            <img src="imagesfigma/Path.png">
+            <img src="imagesfigma/Path.png">
+        </div>
+        <div class="button">
+            <a href="#">Get Free Call</a>
+
+        </div>
+        <div class="text2">
+            <p>What Some of Our Happy Clients Say</p>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
