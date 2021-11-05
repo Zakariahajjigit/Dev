@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        background: url("Mask.png");
+        background-color: #aee3f8;
+        font-family: Verdana;
+        text-align: center;
+    }
+
+     form {
+        background-color: #fff;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+
+    .form-control label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    
+    .form-control input,
+    .form-control textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: Courier, monospace	;
+        padding: 10px;
+        display: block;
+        width: 95%;
+        resize: none;
+    }
+    .form-control select {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: system-ui	;
+        padding: 10px;
+        display: block;
+        width: 95%;
+    }
+   
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+    }
+
+
+    button {
+        background-color: #6eb9f7;
+        border: 1px solid #777;
+        border-radius: 5px;
+        font-family: cursive;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    button:hover {
+        background-color:rgb(81, 122, 255) ;
+    }
+</style>
+</head>
+
+<body>
+    <h1 id="title">Freecodecamp survey form</h1>
+
+
+    <form id="survey-form">
+
+
+        <div  class="form-control">
+            <label  id="name-label">Name</label>
+
+
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div  class="form-control">
+            <label  id="email-label">Email</label>
+
+
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label id="number">Age</label>
+
+
+            <input type="number" id="number-label" min="1" max="2" placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label id="label-role">Which option best describes you?</label>
+
+
+            <select id="dropdown">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div  class="form-control">
+            <label>Would you recommend Freecodecamp to a friend?</label>
+
+
+            <label>
+                <input type="radio" id="recommend1" name="recommend">Yes</input>
+            </label>
+            <label>
+                <input type="radio" id="recommend2" name="recommend">No</input>
+            </label>
+            <label>
+                <input type="radio" id="recommend3" name="recommend">Maybe</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Languages and Frameworks known:</label>
+
+            <label>
+                <input type="checkbox" name="language" value="C">C</input></label>
+            <label>
+                <input type="checkbox" name="language" value="C++">C++</input></label>
+            <label>
+                <input type="checkbox" name="language" value="C#">C#</input></label>
+            <label>
+                <input type="checkbox" name="language" value="Java">Java</input></label>
+            <label>
+                <input type="checkbox" name="language" value="Python">Python</input></label>
+            <label>
+                <input type="checkbox" name="language" value="JavaScript">JavaScript</input></label>
+            <label>
+                <input type="checkbox" name="language" value="React">React</input></label>
+            <label>
+                <input type="checkbox" name="language" value="Angular">Angular</input></label>
+            <label>
+                <input type="checkbox" name="language" value="Django">Django</input></label>
+            <label for="inp-7">
+            
+        </div>
+
+        <div class="form-control">
+            <label>Any comments or suggestions</label>
+
+
+            <textarea id="comment" placeholder="Enter your comment here">
+            </textarea>
+        </div>
+
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
